@@ -1,4 +1,5 @@
 import React from 'react';
+import Newsletter from './Newsletter';
 
 function MyApp() {
 
@@ -6,6 +7,7 @@ function MyApp() {
     <>
       <div className="notification-container">
        hello
+       <Newsletter/>
       </div>
     </>
   );
