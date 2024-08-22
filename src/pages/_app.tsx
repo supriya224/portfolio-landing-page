@@ -1,5 +1,6 @@
 import React from 'react';
 import Newsletter from './Newsletter';
+import About from './About';
 
 function MyApp() {
 
@@ -7,6 +8,7 @@ function MyApp() {
     <>
       <div className="notification-container">
        hello
+       <About/>
        <Newsletter/>
       </div>
     </>
