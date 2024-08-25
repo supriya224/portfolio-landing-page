@@ -1,22 +1,29 @@
-import Image from 'next/image';
-import React from 'react';
-import IMG from "/public/assets/Group 7.png"
-
+import Image from "next/image";
+import React from "react";
+import IMG from "/public/assets/Group 7.png";
+import ProgressBar from "@/components/ProgressBar";
 
 const About: React.FC = () => {
-  const skills = [
-    { name: 'UX', percentage: 80, color: 'bg-[#FD6F00]' },
-    { name: 'Graphic Design', percentage: 70, color: 'bg-[#FD6F00]' },
-    { name: 'Website Design', percentage: 60, color: 'bg-[#FD6F00]' },
-    { name: 'App Design', percentage: 30, color: 'bg-[#FD6F00]' },
-    ];
+
 
   return (
-    <div className='flex'>
-          <div>
+    <div className="flex mx-auto container">
+      <div>
         <Image src={IMG} alt="" />
       </div>
-      <div>
+      <div className=" flex flex-col items-center mx-32  ">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6">About me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+          lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus
+          pharetra
+        </p>
+        <ProgressBar label="UX/UI Design" initialProgress={70} />
+        <ProgressBar label="Web Design" initialProgress={50} />
+        <ProgressBar label="App Design" initialProgress={30} />
+        <ProgressBar label="Graphics Design" initialProgress={90} />
+      </div>
+      {/* <div>
         <h3>
           About Me
         </h3>
@@ -33,7 +40,7 @@ const About: React.FC = () => {
           </div>
         </div>
       ))}
-      </div>
+      </div> */}
     </div>
   );
 };
